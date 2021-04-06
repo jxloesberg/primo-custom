@@ -1,4 +1,5 @@
-
+/* Adobe Typekit */
+@import url("https://use.typekit.net/ooq8hdx.css");
 
 /*Uncomment the follwoing lines to move facets to the left*/
 
@@ -16,59 +17,111 @@ prm-search > md-content.md-primoExplore-theme .main {
 }
 */
 
-Remove Logo Padding
+/* Remove Logo Padding */
 prm-logo .product-logo, prm-logo img {
- padding: 0em;
+    padding: 0em;
 }
 
 /* Hide WorldCat scopes from basic search */
-md-option[value="WorldCat"]
-{
-  display: none;
+md-option[value="WorldCat"] {
+    display: none;
 }
 
-ul.md-autocomplete-suggestions li:nth-child(4) 
-{
-  display: none;
+ul.md-autocomplete-suggestions li:nth-child(4) {
+    display: none;
 }
 
 /* re-order full record display elements */
 .full-view-inner-container {
-padding-bottom: 10em;
-display: flex;
-flex-direction: column;
+    padding-bottom: 10em;
+    display: flex;
+    flex-direction: column;
 }
 
 /*re-order the Center Sections */
-#getit_link1_0 { order: 0; }
-#getit_link2_0 { order: 1; }
-#links { order: 2; }
-#details { order: 3; }
-#action_list{ order: 4; }
-#virtualBrowse { order: 5; }
-#citationTrails { order: 6; }
+#getit_link1_0 {
+    order: 0;
+}
 
+#getit_link2_0 {
+    order: 1;
+}
+
+#links {
+    order: 2;
+}
+
+#details {
+    order: 3;
+}
+
+#action_list {
+    order: 4;
+}
+
+#virtualBrowse {
+    order: 5;
+}
+
+#citationTrails {
+    order: 6;
+}
 
 
 /*re-order the Left Navigation on the Detailed Page */
-[aria-label="Online Access"] { order: 0 !important; }
-[aria-label="In the library"] { order: 1 !important; }
-[aria-label="Links"] { order: 2 !important; }
-[aria-label="Details"] { order: 3 !important; }
-[aria-label="Send to"] { order: 4 !important; }
-[aria-label="Virtual Browse"] { order: 5 !important; }
-[aria-label="Citations"] { order: 6 !important; }
+[aria-label="Online Access"] {
+    order: 0 !important;
+}
 
+[aria-label="In the library"] {
+    order: 1 !important;
+}
+
+[aria-label="Links"] {
+    order: 2 !important;
+}
+
+[aria-label="Details"] {
+    order: 3 !important;
+}
+
+[aria-label="Send to"] {
+    order: 4 !important;
+}
+
+[aria-label="Virtual Browse"] {
+    order: 5 !important;
+}
+
+[aria-label="Citations"] {
+    order: 6 !important;
+}
 
 
 /* Hide RefWorks in user menu */
 
-.my-refworks-ctm{
-display: none;
+.my-refworks-ctm {
+    display: none;
 }
 
-.my-refworks-separator-ctm{
-display: none;
+.my-refworks-separator-ctm {
+    display: none;
 }
 
-*/body{background:#fff;color:#000}a:not(.organization-logo) :not(.md-icon-button) :not(.md-button){color:#000;text-decoration:none;box-shadow:inset 0 -4px 0 #fdb515}a:not(.organization-logo) :not(.md-icon-button) :not(.md-button):hover{background:#fdb515}
+/* Match new official Library styles */
+
+body {
+    background: #fff;
+    color: #000;
+    font-family: freight-sans-pro, Helvetica, sans-serif;
+}
+
+a:not(.organization-logo) :not(.md-icon-button) :not(.md-button) {
+    color: #000;
+    text-decoration: none;
+    box-shadow: inset 0 -4px 0 #fdb515
+}
+
+a:not(.organization-logo) :not(.md-icon-button) :not(.md-button):hover {
+    background: #fdb515
+}
