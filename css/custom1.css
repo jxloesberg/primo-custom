@@ -17,10 +17,6 @@ prm-search > md-content.md-primoExplore-theme .main {
 }
 */
 
-/* Remove Logo Padding */
-prm-logo .product-logo, prm-logo img {
-    padding: 0em;
-}
 
 /* Hide WorldCat scopes from basic search */
 md-option[value="WorldCat"] {
@@ -114,14 +110,85 @@ body {
     background: #fff;
     color: #000;
     font-family: freight-sans-pro, Helvetica, sans-serif;
+    overflow: auto !important;
 }
 
-a:not(.organization-logo) :not(.md-icon-button) :not(.md-button) {
+.top-nav-bar.layout-row,
+prm-search-bar {
+    background-color: white;
+}
+
+/* Nav menu link colors */
+a.zero-margin.flex-button.multi-line-button.button-over-dark.md-button.md-primoExplore-theme.md-ink-ripple.layout-align-center-center.layout-column {
+    color: black;
+    box-shadow: none;
+}
+
+/* Content boxes */
+md-card.default-card {
+    background-color: white;
+    box-shadow: none;
+}
+
+/* Search bar */
+.simple-search-wrapper.layout-full-width {
+    box-shadow: none !important;
+    border: 1px solid #aba8a8;
+}
+
+/* Content links */
+md-content.main a {
     color: #000;
     text-decoration: none;
-    box-shadow: inset 0 -4px 0 #fdb515
+    box-shadow: inset 0 -4px 0 #fdb515;
+    transition: background 0.25s ease-in-out;
 }
 
-a:not(.organization-logo) :not(.md-icon-button) :not(.md-button):hover {
-    background: #fdb515
+md-content.main a:hover {
+    background: #fdb515;
 }
+
+md-toolbar.md-toolbar-tools.results-title {
+    background-color: white;
+    border-bottom: 1px solid #aba8a8;
+}
+
+.bar.alert-bar.layout-row {
+    background: #46535E;
+    color: white;
+    border: none;
+}
+
+.bar.alert-bar .md-button {
+    color: #fdb515;
+}
+
+.bar.alert-bar .md-button:hover {
+    color: #46535E;
+    background: #46535E;
+}
+
+#searchResultsContainer .list-item-wrapper {
+    background-color: white;
+}
+
+#searchResultsContainer .md-button {
+    color: black;
+}
+#searchResultsContainer .md-button:hover {
+    color: #fdb515;
+}
+
+#searchResultsContainer .md-nav-item .md-button:hover {
+    background-color: white;
+}
+
+/*a:not(.organization-logo) :not(.md-icon-button) :not(.md-button) {*/
+/*    color: #000;*/
+/*    text-decoration: none;*/
+/*    box-shadow: inset 0 -4px 0 #fdb515*/
+/*}*/
+
+/*a:not(.organization-logo) :not(.md-icon-button) :not(.md-button):hover {*/
+/*    background: #fdb515*/
+/*}*/
