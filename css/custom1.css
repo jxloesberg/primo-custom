@@ -124,6 +124,45 @@ a.zero-margin.flex-button.multi-line-button.button-over-dark.md-button.md-primoE
     box-shadow: none;
 }
 
+prm-topbar .md-icon-button {
+    background-color: black;
+    color: white !important;
+}
+
+prm-topbar .md-icon-button:hover {
+    background-color: #fdb515 !important;
+    box-shadow: none;
+    color: black !important;
+}
+
+prm-main-menu .buttons-group .md-button {
+    box-shadow: none;
+    color: black !important;
+}
+
+.search-elements-wrapper button md-icon svg {
+    color: black;
+
+
+.search-elements-wrapper button:hover {
+    background-color: black;
+}
+
+.search-elements-wrapper button:hover md-icon svg {
+    color: #fdb515;
+}
+
+prm-search-bar .search-switch-buttons .md-button.switch-to-advanced {
+    color: black;
+    transition: background-color 0.25s ease-in-out;
+}
+
+prm-search-bar .search-switch-buttons .md-button.switch-to-advanced:hover {
+    background-color: #fdb515;
+}
+
+
+
 /* Content boxes */
 md-card.default-card {
     background-color: white;
