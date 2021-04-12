@@ -153,16 +153,21 @@ prm-main-menu .buttons-group .md-button {
     color: #fdb515;
 }
 
-prm-search-bar .search-switch-buttons .md-button.switch-to-advanced {
+prm-search-bar .search-switch-buttons .md-button.switch-to-advanced,
+prm-search-bar .search-switch-buttons .md-button.switch-to-simple  {
     color: black;
     transition: background-color 0.25s ease-in-out;
 }
 
-prm-search-bar .search-switch-buttons .md-button.switch-to-advanced:hover {
-    background-color: #fdb515;
+prm-search-bar .search-switch-buttons .md-button.switch-to-advanced:hover,
+prm-search-bar .search-switch-buttons .md-button.switch-to-simple:hover {
+    color: black !important;
+    background-color: #fdb515 !important;
 }
 
-
+prm-search-bar .search-element-inner .md-button:hover {
+    background-color: black !important;
+}
 
 /* Content boxes */
 md-card.default-card {
@@ -222,6 +227,46 @@ md-toolbar.md-toolbar-tools.results-title {
 #searchResultsContainer .md-nav-item .md-button:hover {
     background-color: white;
 }
+
+/* Advanced Search page */
+
+.advanced-search-backdrop.visible {
+    background-color: white;
+}
+
+.search-elements-wrapper .advanced-search-tabs {
+    background-color: white;
+    border: none;
+}
+
+prm-search-bar .advanced-search-output md-card {
+    background-color: white;
+    border: none;
+}
+
+md-radio-button.md-checked .md-on {
+    background-color: black;
+}
+md-radio-button.md-checked .md-off {
+    border-color: black !important;
+}
+
+.md-button.md-primary, .md-button.button-with-icon {
+    color: black;
+}
+
+.md-button.md-primary:hover md-icon svg, .md-button.button-with-icon:hover md-icon svg {
+    fill: black !important;
+    color: black !important;
+}
+
+.md-button.md-primary:hover, .md-button.button-with-icon:hover {
+    background-color: #fdb515 !important;
+    color: black !important;
+
+}
+
+
 
 /*a:not(.organization-logo) :not(.md-icon-button) :not(.md-button) {*/
 /*    color: #000;*/

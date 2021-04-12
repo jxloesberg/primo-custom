@@ -1,3 +1,5 @@
 .DS_Store
 .idea
-test.html
+home_files
+/*.html
+*_files
