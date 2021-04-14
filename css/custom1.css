@@ -135,6 +135,14 @@ prm-topbar .md-icon-button:hover {
     color: black !important;
 }
 
+.user-button.sign-in-btn-ctm {
+    color: black !important;
+}
+
+.user-button.sign-in-btn-ctm:hover {
+    background-color: #fdb515 !important;
+}
+
 prm-main-menu .buttons-group .md-button {
     box-shadow: none;
     color: black !important;
@@ -213,6 +221,8 @@ md-toolbar.md-toolbar-tools.results-title {
     background: #46535E;
 }
 
+/* Search results */
+
 #searchResultsContainer .list-item-wrapper {
     background-color: white;
 }
@@ -220,12 +230,45 @@ md-toolbar.md-toolbar-tools.results-title {
 #searchResultsContainer .md-button {
     color: black;
 }
+
 #searchResultsContainer .md-button:hover {
-    color: #fdb515;
+    background-color: #fdb515;
+}
+#searchResultsContainer .md-button:hover span {
+    box-shadow: none;
 }
 
 #searchResultsContainer .md-nav-item .md-button:hover {
     background-color: white;
+}
+
+prm-brief-result .item-title span {
+    color: black;
+}
+
+#searchResultsContainer mark {
+    box-shadow: none;
+    background-color: #fdb515;
+}
+
+#searchResultsContainer .md-button span {
+    color: black;
+}
+
+#facets * {
+    color: black !important;
+}
+
+#facets .section-content .md-chips .md-chip .facet-title:hover {
+    background: #fdb515;
+}
+
+.section-title.md-button:hover span {
+    color: black !important;
+}
+
+prm-icon md-icon, prm-icon md-icon.md-primoExplore-theme {
+    color: black !important;
 }
 
 /* Advanced Search page */
