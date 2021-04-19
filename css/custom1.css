@@ -129,17 +129,18 @@ prm-topbar .md-icon-button {
     color: white !important;
 }
 
-prm-topbar .md-icon-button:hover {
+prm-topbar .md-icon-button:hover, prm-topbar .md-icon-button:focus {
     background-color: #fdb515 !important;
     box-shadow: none;
     color: black !important;
 }
 
-.user-button.sign-in-btn-ctm {
+.user-button.sign-in-btn-ctm, .md-button.button-with-menu-arrow {
     color: black !important;
 }
 
-.user-button.sign-in-btn-ctm:hover {
+.user-button.sign-in-btn-ctm:hover, .md-button.button-with-menu-arrow:hover,
+.user-button.sign-in-btn-ctm:focus, .md-button.button-with-menu-arrow:focus {
     background-color: #fdb515 !important;
 }
 
@@ -148,16 +149,24 @@ prm-main-menu .buttons-group .md-button {
     color: black !important;
 }
 
+prm-main-menu .buttons-group a:hover, prm-main-menu .buttons-group a:focus,
+prm-main-menu button:hover, prm-main-menu button:focus {
+    box-shadow: inset 0 -4px 0 #fdb515 !important;
+}
+
+
 .search-elements-wrapper button md-icon svg {
     color: black;
 }
 
 
-.search-elements-wrapper button:hover {
+.search-elements-wrapper button:hover,
+.search-elements-wrapper button:focus {
     background-color: black;
 }
 
-.search-elements-wrapper button:hover md-icon svg {
+.search-elements-wrapper button:hover md-icon svg,
+.search-elements-wrapper button:focus md-icon svg{
     color: #fdb515;
 }
 
@@ -168,12 +177,15 @@ prm-search-bar .search-switch-buttons .md-button.switch-to-simple  {
 }
 
 prm-search-bar .search-switch-buttons .md-button.switch-to-advanced:hover,
-prm-search-bar .search-switch-buttons .md-button.switch-to-simple:hover {
+prm-search-bar .search-switch-buttons .md-button.switch-to-simple:hover,
+prm-search-bar .search-switch-buttons .md-button.switch-to-advanced:focus,
+prm-search-bar .search-switch-buttons .md-button.switch-to-simple:focus {
     color: black !important;
     background-color: #fdb515 !important;
 }
 
-prm-search-bar .search-element-inner .md-button:hover {
+prm-search-bar .search-element-inner .md-button:hover,
+prm-search-bar .search-element-inner .md-button:focus  {
     background-color: black !important;
 }
 
@@ -197,7 +209,8 @@ md-content.main a {
     transition: background 0.25s ease-in-out;
 }
 
-md-content.main a:hover {
+md-content.main a:hover,
+md-content.main a:focus {
     background: #fdb515;
 }
 
@@ -216,7 +229,8 @@ md-toolbar.md-toolbar-tools.results-title {
     color: #fdb515;
 }
 
-.bar.alert-bar .md-button:hover {
+.bar.alert-bar .md-button:hover,
+.bar.alert-bar .md-button:focus {
     color: #46535E;
     background: #46535E;
 }
@@ -231,14 +245,17 @@ md-toolbar.md-toolbar-tools.results-title {
     color: black;
 }
 
-#searchResultsContainer .md-button:hover {
+#searchResultsContainer .md-button:hover,
+#searchResultsContainer .md-button:focus {
     background-color: #fdb515;
 }
-#searchResultsContainer .md-button:hover span {
+#searchResultsContainer .md-button:hover span,
+#searchResultsContainer .md-button:focus span {
     box-shadow: none;
 }
 
-#searchResultsContainer .md-nav-item .md-button:hover {
+#searchResultsContainer .md-nav-item .md-button:hover,
+#searchResultsContainer .md-nav-item .md-button:focus {
     background-color: white;
 }
 
@@ -259,17 +276,19 @@ prm-brief-result .item-title span {
     color: black !important;
 }
 
-#facets .section-content .md-chips .md-chip .facet-title:hover {
+#facets .section-content .md-chips .md-chip .facet-title:hover,
+#facets .section-content .md-chips .md-chip .facet-title:focus {
     background: #fdb515;
 }
 
-.section-title.md-button:hover span {
+.section-title.md-button:hover span,
+.section-title.md-button:focus span {
     color: black !important;
 }
 
-prm-icon md-icon, prm-icon md-icon.md-primoExplore-theme {
-    color: black !important;
-}
+/*prm-icon md-icon, prm-icon md-icon.md-primoExplore-theme {*/
+/*    color: black !important;*/
+/*}*/
 
 /* Advanced Search page */
 
@@ -298,18 +317,50 @@ md-radio-button.md-checked .md-off {
     color: black;
 }
 
-.md-button.md-primary:hover md-icon svg, .md-button.button-with-icon:hover md-icon svg {
+.md-button.md-primary:hover md-icon svg, .md-button.button-with-icon:hover md-icon svg,
+.md-button.md-primary:focus md-icon svg, .md-button.button-with-icon:focus md-icon svg {
     fill: black !important;
     color: black !important;
 }
 
-.md-button.md-primary:hover, .md-button.button-with-icon:hover {
+.md-button.md-primary:hover, .md-button.button-with-icon:hover,
+.md-button.md-primary:focus, .md-button.button-with-icon:focus {
     background-color: #fdb515 !important;
     color: black !important;
 
 }
 
 
+/* Single listing */
+
+.md-dialog-container md-dialog, .md-dialog-container .full-view-inner-container {
+    background-color: white;
+}
+.md-dialog-container.fixed-container {
+    background-color: #46535E;
+}
+
+.md-dialog-container .md-button.button-link {
+    color: black;
+}
+
+.md-dialog-container .md-button.button-link:hover,
+.md-dialog-container .md-button.button-link:focus {
+    color: black;
+    background-color: #fdb515;
+}
+
+.search-result-availability-line-wrapper .md-button span {
+    color: black;
+}
+
+/* Ask a librarian */
+.s-lch-widget-float-btn.online {
+    background-color: black !important;
+}
+#s-lch-autoload-profile .s-lch-profile, #s-lch-autoload-profile .s-lch-profile-name {
+    color: black !important;
+}
 
 /*a:not(.organization-logo) :not(.md-icon-button) :not(.md-button) {*/
 /*    color: #000;*/
