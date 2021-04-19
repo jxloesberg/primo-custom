@@ -362,6 +362,38 @@ md-radio-button.md-checked .md-off {
     color: black !important;
 }
 
+a.transparent-card:hover, a.transparent-card:focus {
+    box-shadow: inset 0 -4px 0 #fdb515 !important;
+}
+
+prm-main-menu[menu-type=full] a:hover span,
+prm-main-menu[menu-type=full] a:focus span{
+    color: black !important;
+}
+
+a.transparent-card span {
+    color: black !important;
+}
+
+button#mainMenuFullCloseButton {
+    background-color: black;
+}
+
+button#mainMenuFullCloseButton:hover,
+button#mainMenuFullCloseButton:focus
+{
+    box-shadow:none;
+    background-color: #fdb515;
+    color: black;
+}
+
+/*a.transparent-card:hover span {*/
+/*    color: black !important;*/
+/*}*/
+
+/* More search options page */
+
+
 /*a:not(.organization-logo) :not(.md-icon-button) :not(.md-button) {*/
 /*    color: #000;*/
 /*    text-decoration: none;*/
