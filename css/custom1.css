@@ -205,7 +205,7 @@ md-card.default-card {
 md-content.main a {
     color: #000;
     text-decoration: none;
-    box-shadow: inset 0 -4px 0 #fdb515;
+    box-shadow: inset 0 -2px 0 #fdb515;
     transition: background 0.25s ease-in-out;
 }
 
@@ -272,13 +272,18 @@ prm-brief-result .item-title span {
     color: black;
 }
 
-#facets * {
+.multiselect-submit .multiselect-submit-inner .md-button.md-primary, .prm-positive-bg {
+    background-color: black;
+}
+
+#facets > * {
     color: black !important;
 }
 
 #facets .section-content .md-chips .md-chip .facet-title:hover,
 #facets .section-content .md-chips .md-chip .facet-title:focus {
-    background: #fdb515;
+    background-color: transparent;
+    box-shadow: inset 0 -2px 0 #fdb515;
 }
 
 .section-title.md-button:hover span,
@@ -330,6 +335,10 @@ md-radio-button.md-checked .md-off {
 
 }
 
+.multiselect-submit-inner .md-button {
+    color: white;
+    background-color: black;
+}
 
 /* Single listing */
 
@@ -386,6 +395,33 @@ button#mainMenuFullCloseButton:focus
     background-color: #fdb515;
     color: black;
 }
+
+/* Sign in screen */
+md-dialog.light-on-dark-dialog {
+    background-color: white !important;
+    color: black !important;
+}
+
+md-dialog.light-on-dark-dialog .md-button {
+    color: black !important;
+}
+
+md-dialog.light-on-dark-dialog md-list md-list-item.list-login .md-button {
+    /*color: black !important;*/
+    background-color: transparent !important;
+}
+
+md-dialog.light-on-dark-dialog md-list md-list-item.list-login .md-button:hover,
+md-dialog.light-on-dark-dialog md-list md-list-item.list-login .md-button:focus {
+    box-shadow: inset 0 -4px 0 #fdb515 !important;
+}
+
+md-dialog.light-on-dark-dialog md-list md-list-item.list-login .md-button:hover {
+    color: black !important;
+    box-shadow: inset 0 -4px 0 #fdb515 !important;
+
+
+
 
 /*a.transparent-card:hover span {*/
 /*    color: black !important;*/
