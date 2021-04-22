@@ -205,13 +205,12 @@ md-card.default-card {
 md-content.main a {
     color: #000;
     text-decoration: none;
-    box-shadow: inset 0 -2px 0 #fdb515;
-    transition: background 0.25s ease-in-out;
+    transition: box-shadow 0.25s ease-in-out;
 }
 
 md-content.main a:hover,
 md-content.main a:focus {
-    background: #fdb515;
+    box-shadow: inset 0 -2px 0 #fdb515;
 }
 
 md-toolbar.md-toolbar-tools.results-title {
@@ -237,6 +236,14 @@ md-toolbar.md-toolbar-tools.results-title {
 
 /* Search results */
 
+.md-button.button-as-link.link-alt-color {
+    color: black;
+}
+
+prm-search-result-tool-bar md-toolbar .button-as-link.link-alt-color:hover {
+    background-color: #fdb515 !important;
+    color: black !important;
+}
 #searchResultsContainer .list-item-wrapper {
     background-color: white;
 }
@@ -276,7 +283,7 @@ prm-brief-result .item-title span {
     background-color: black;
 }
 
-#facets > * {
+#facets > *, #facets md-icon {
     color: black !important;
 }
 
@@ -284,6 +291,7 @@ prm-brief-result .item-title span {
 #facets .section-content .md-chips .md-chip .facet-title:focus {
     background-color: transparent;
     box-shadow: inset 0 -2px 0 #fdb515;
+    color: black;
 }
 
 .section-title.md-button:hover span,
@@ -419,6 +427,7 @@ md-dialog.light-on-dark-dialog md-list md-list-item.list-login .md-button:focus 
 md-dialog.light-on-dark-dialog md-list md-list-item.list-login .md-button:hover {
     color: black !important;
     box-shadow: inset 0 -4px 0 #fdb515 !important;
+}
 
 
 
