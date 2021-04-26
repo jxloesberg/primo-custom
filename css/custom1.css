@@ -295,21 +295,21 @@ prm-brief-result .item-title span {
     background-color: black;
 }
 
-#facets > *, #facets md-icon {
-    color: black !important;
-}
+/*#facets > *, #facets md-icon {*/
+/*    color: black !important;*/
+/*}*/
 
-#facets .section-content .md-chips .md-chip .facet-title:hover,
-#facets .section-content .md-chips .md-chip .facet-title:focus {
-    background-color: transparent;
-    box-shadow: inset 0 -2px 0 #fdb515;
-    color: black;
-}
+/*#facets .section-content .md-chips .md-chip .facet-title:hover,*/
+/*#facets .section-content .md-chips .md-chip .facet-title:focus {*/
+/*    background-color: transparent;*/
+/*    box-shadow: inset 0 -2px 0 #fdb515;*/
+/*    color: black;*/
+/*}*/
 
-.section-title.md-button:hover span,
-.section-title.md-button:focus span {
-    color: black !important;
-}
+/*.section-title.md-button:hover span,*/
+/*.section-title.md-button:focus span {*/
+/*    color: black !important;*/
+/*}*/
 
 /*prm-icon md-icon, prm-icon md-icon.md-primoExplore-theme {*/
 /*    color: black !important;*/
