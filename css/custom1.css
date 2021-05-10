@@ -14,6 +14,12 @@ prm-search > md-content.md-primoExplore-theme .main {
 }
 */
 
+/* View Main Menu on the services page / openURL page */
+
+prm-main-menu.isServicePage {
+    display: block !important;
+}
+
 
 /* Hide WorldCat scopes from basic search */
 md-option[value="WorldCat"] {
