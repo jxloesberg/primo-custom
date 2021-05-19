@@ -1,2 +1,90 @@
-prm-topbar .top-nav-bar{background-color:#003262}prm-search-bar{background-color:#46535e}prm-main-menu.isServicePage{display:block!important}md-option[value=WorldCat],ul.md-autocomplete-suggestions li:nth-child(4){display:none}.full-view-inner-container{padding-bottom:10em;display:flex;flex-direction:column}#getit_link1_0{order:0}#getit_link2_0{order:1}#links{order:2}#details{order:3}#action_list{order:4}#virtualBrowse{order:5}#citationTrails{order:6}[aria-label="Online Access"]{order:0!important}[aria-label="In the library"]{order:1!important}[aria-label=Links]{order:2!important}[aria-label=Details]{order:3!important}[aria-label="Send to"]{order:4!important}[aria-label="Virtual Browse"]{order:5!important}[aria-label=Citations]{order:6!important}.my-refworks-ctm,.my-refworks-separator-ctm{display:none}
-/*# sourceMappingURL=custom1.css.map */
+prm-topbar .top-nav-bar {
+  background-color: #003262; }
+
+prm-search-bar {
+  background-color: #46535E; }
+
+/**
+This file contains styles from other developers
+ */
+/*Uncomment the following lines to move facets to the left*/
+/*
+prm-search > md-content.md-primoExplore-theme .main {
+    display: -webkit-flex; !* Safari *!
+    -webkit-flex-flow: row-reverse wrap; !* Safari 6.1+ *!
+    display: flex;
+    flex-flow: row-reverse wrap;
+
+}
+.screen-gt-sm .sidebar{
+    webkit-flex: 0 0 15%;
+    flex: 0 0 15%;
+}
+*/
+/* View Main Menu on the services page / openURL page */
+prm-main-menu.isServicePage {
+  display: block !important; }
+
+/* Hide WorldCat scopes from basic search */
+md-option[value="WorldCat"] {
+  display: none; }
+
+ul.md-autocomplete-suggestions li:nth-child(4) {
+  display: none; }
+
+/* re-order full record display elements */
+.full-view-inner-container {
+  padding-bottom: 10em;
+  display: flex;
+  flex-direction: column; }
+
+/*re-order the Center Sections */
+#getit_link1_0 {
+  order: 0; }
+
+#getit_link2_0 {
+  order: 1; }
+
+#links {
+  order: 2; }
+
+#details {
+  order: 3; }
+
+#action_list {
+  order: 4; }
+
+#virtualBrowse {
+  order: 5; }
+
+#citationTrails {
+  order: 6; }
+
+/*re-order the Left Navigation on the Detailed Page */
+[aria-label="Online Access"] {
+  order: 0 !important; }
+
+[aria-label="In the library"] {
+  order: 1 !important; }
+
+[aria-label="Links"] {
+  order: 2 !important; }
+
+[aria-label="Details"] {
+  order: 3 !important; }
+
+[aria-label="Send to"] {
+  order: 4 !important; }
+
+[aria-label="Virtual Browse"] {
+  order: 5 !important; }
+
+[aria-label="Citations"] {
+  order: 6 !important; }
+
+/* Hide RefWorks in user menu */
+.my-refworks-ctm {
+  display: none; }
+
+.my-refworks-separator-ctm {
+  display: none; }
