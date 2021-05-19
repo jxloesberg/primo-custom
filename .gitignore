@@ -1,5 +1,9 @@
 .DS_Store
 .idea
-home_files
 /*.html
 *_files
+gulpfile.js
+node_modules
+package*.json
+*.scss
+*.map
