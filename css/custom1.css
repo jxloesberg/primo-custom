@@ -88,3 +88,6 @@ ul.md-autocomplete-suggestions li:nth-child(4) {
 
 .my-refworks-separator-ctm {
   display: none; }
+
+.s-lch-widget-float-btn {
+  right: 62px !important; }
