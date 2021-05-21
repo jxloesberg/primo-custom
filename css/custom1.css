@@ -91,3 +91,7 @@ ul.md-autocomplete-suggestions li:nth-child(4) {
 
 .s-lch-widget-float-btn {
   right: 62px !important; }
+
+button.s-lch-widget-float-btn.online.s-lch-widget-img-btn {
+  background-color: transparent;
+  box-shadow: none; }
