@@ -42,18 +42,18 @@
                "c": "9170771e-ba2d-11ea-b473-0a569fab77af",
                "coverageType": 1,
                "coverageHours": {},
-               "fallbackSeconds": 30
+               "fallbackSeconds": 40
           }],
           "width": "375px",
           "height": "300",
           "autoload_time": 10,
-          "slidebutton_height": "auto",
-          "slidebutton_width": "auto",
+          "slidebutton_height": "80px",
+          "slidebutton_width": "80px",
           "slidebutton_bcolor": "#286090",
           "slidebutton_color": "#ffffff",
           "slidebutton_bcolor_off": "#286090",
           "slidebutton_color_off": "#ffffff",
-          "slidebutton_url": "",
+          "slidebutton_url": "https:\/\/www.lib.berkeley.edu\/sites\/default\/files\/askus.svg",
           "slidebutton_url_off": "",
           "slidebutton_text": "Chat with us",
           "slidebutton_text_off": "Offline",
@@ -218,6 +218,5 @@
      };
      floatWidget.config = options, floatWidget.cascadeServer = cascadeServer, floatWidget.referer = referer, floatWidget.refererTitle = refererTitle, window.openChat = floatWidget.openChat.bind(floatWidget), "complete" === document.readyState || "interactive" === document.readyState ? floatWidget.start() : (document.addEventListener("DOMContentLoaded", floatWidget.start.bind(floatWidget), !1), window.addEventListener("load", floatWidget.start.bind(floatWidget), !1));
 })();
-
 
 
