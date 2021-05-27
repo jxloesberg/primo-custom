@@ -21,7 +21,7 @@
      app.component('prmSearchBarAfter', {
           bindings: { parentCtrl: '<' },
           controller: 'SearchBarAfterController',
-          templateUrl: 'custom/01UCS_BER:JESSE_TEST/html/prmSearchBarAfter.html',
+          templateUrl: 'custom/01UCS_BER-JESSE_TEST/html/prmSearchBarAfter.html',
      });
 
      app.controller('SearchBarAfterController', ['$location', '$window', function($location, $window){
