@@ -1,7 +1,9 @@
 prm-topbar .top-nav-bar {
   background-color: #46535E; }
 
-prm-search-bar {
+prm-search-bar,
+prm-atoz-search-bar,
+prm-browse-search-bar {
   background-color: black; }
 
 /**
