@@ -126,8 +126,10 @@ button.s-lch-widget-float-btn.online.s-lch-widget-img-btn {
   .uc-library-search-logo button {
     margin-top: 0; }
   .uc-library-search-logo img {
-    width: 70%;
-    max-width: 300px; } }
+    width: 90%;
+    max-width: 300px;
+    position: relative;
+    top: 10px; } }
 
 @media (min-width: 1300px) {
   .uc-library-search-logo {
