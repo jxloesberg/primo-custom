@@ -123,13 +123,13 @@ button.s-lch-widget-float-btn.online.s-lch-widget-img-btn {
     text-align: center;
     top: 30px;
     position: absolute; }
-  .uc-library-search-logo button {
-    margin-top: 0; }
-  .uc-library-search-logo img {
-    width: 85%;
-    max-width: 300px;
-    position: relative;
-    top: 15px; } }
+    .uc-library-search-logo button {
+      margin-top: 0; }
+    .uc-library-search-logo img {
+      width: 85%;
+      max-width: 300px;
+      position: relative;
+      top: 13px; } }
 
 @media (min-width: 1300px) {
   .uc-library-search-logo {
