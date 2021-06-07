@@ -21,7 +21,7 @@
      app.component('prmSearchBarAfter', {
           bindings: { parentCtrl: '<' },
           controller: 'SearchBarAfterController',
-          templateUrl: 'custom/01UCS_BER-JESSE_TEST/html/prmSearchBarAfter.html',
+          templateUrl: 'custom/01UCS_BER-TEST/html/prmSearchBarAfter.html',
      });
 
      app.controller('SearchBarAfterController', ['$location', '$window', function($location, $window){
@@ -42,8 +42,114 @@
           };
      }]);
 
+     /**
+      * New Facets
+      */
+     app.value('searchTargets', [{
+          "name": "Search in Worldcat",
+          "desc": "for advanced filtering options",
+          "url": "https://110105.on.worldcat.org/v2/search?",
+          "img": "custom/01CDL_SCR_INST-USCS/img/worldcat.png",
+          mapping: function (queries, filters) {
+               const query_mappings = {
+                    'any': 'kw',
+                    'title': 'ti',
+                    'creator': 'au',
+                    'subject': 'su',
+                    'isbn': 'bn',
+                    'issn': 'n2'
+               }
+               try {
+                    return 'queryString=' + queries.map(part => {
+                         let terms = part.split(',')
+                         let type = query_mappings[terms[0]] || 'kw'
+                         let string = terms[2] || ''
+                         let join = terms[3] || ''
+                         return type + ':' + string + ' ' + join + ' '
+                    }).join('')
+               }
+               catch (e) {
+                    return ''
+               }
+          }
+     }
+     ]);
 
-})();
+     angular
+          .module('externalSearch', [])
+          .value('searchTargets', [])
+          .component('prmFacetAfter', {
+               bindings: { parentCtrl: '<' },
+               controller: ['externalSearchService', function (externalSearchService) {
+                    externalSearchService.controller = this.parentCtrl
+                    externalSearchService.addExtSearch()
+               }]
+          })
+          .component('prmPageNavMenuAfter', {
+               controller: ['externalSearchService', function (externalSearchService) {
+                    if (externalSearchService.controller) externalSearchService.addExtSearch()
+               }]
+          })
+          .component('prmFacetExactAfter', {
+               bindings: { parentCtrl: '<' },
+               /* Customized the template. Removed some div with chips classes. Added target.desc and span wrapper.
+                  Changed width/height to 40. */
+               template: `
+  	<div ng-if="name === 'External Search'">
+    	<div ng-hide="$ctrl.parentCtrl.facetGroup.facetGroupCollapsed">
+      	<div class="section-content animate-max-height-variable" id="external-search">
+        	<div ng-repeat="target in targets" aria-live="polite" class="md-chip animate-opacity-and-scale facet-element-marker-local4">
+          	<div class="md-chip-content layout-row" role="button" tabindex="0">
+            	<strong dir="auto" title="{{ target.name }}">
+              	<a ng-href="{{ target.url + target.mapping(queries, filters) }}" target="_blank">
+                	<img ng-src="{{ target.img }}" width="40" height="40"/> {{ target.name }}
+              	</a>
+              	<span class="desc">{{target.desc}}</span>
+            	</strong>
+          	</div>
+        	</div>
+      	</div>
+    	</div>
+  	</div>`,
+               controller: ['$scope', '$location', 'searchTargets', function ($scope, $location, searchTargets) {
+                    $scope.name = this.parentCtrl.facetGroup.name
+                    $scope.targets = searchTargets
+                    let query = $location.search().query
+                    let filter = $location.search().pfilter
+                    $scope.queries = Array.isArray(query) ? query : query ? [query] : false
+                    $scope.filters = Array.isArray(filter) ? filter : filter ? [filter] : false
+               }]
+          })
+          .factory('externalSearchService', function () {
+               return {
+                    get controller() {
+                         return this.prmFacetCtrl || false
+                    },
+                    set controller(controller) {
+                         this.prmFacetCtrl = controller
+                    },
+                    addExtSearch: function () {
+                         // Changed this conditional to look for our intended scope.
+                         if (this.prmFacetCtrl.$stateParams.search_scope == 'Worldcat') {
+                              this.prmFacetCtrl.facetService.results.unshift({
+                                   name: 'External Search',
+                                   displayedType: 'exact',
+                                   limitCount: 0,
+                                   facetGroupCollapsed: false,
+                                   values: undefined
+                              })
+                         }
+                    }
+               }
+          });
+
+
+
+
+
+
+
+               })();
 
 (function () {
      var options = {

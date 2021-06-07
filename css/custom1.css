@@ -125,12 +125,29 @@ button.s-lch-widget-float-btn.online.s-lch-widget-img-btn {
     position: absolute; }
     .uc-library-search-logo button {
       margin-top: 0; }
-    .uc-library-search-logo img {
-      width: 85%;
-      max-width: 300px;
+    .uc-library-search-logo svg#Layer_1 {
+      top: 8px;
       position: relative;
-      top: 13px; } }
+      width: 100%;
+      right: 10px; } }
 
 @media (min-width: 1300px) {
   .uc-library-search-logo {
-    top: 1.5em; } }
+    top: 1.5em; }
+    .uc-library-search-logo svg#Layer_1 {
+      top: 14px; } }
+
+/* External search: worldcat */
+div[data-facet-group="External Search"] h3 {
+  display: none; }
+
+#external-search img {
+  float: left;
+  margin-right: 8px; }
+
+#external-search a {
+  font-weight: bold; }
+
+#external-search span {
+  display: block;
+  color: #3a3a3a; }
