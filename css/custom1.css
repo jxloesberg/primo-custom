@@ -31,7 +31,8 @@ prm-main-menu.isServicePage {
 md-option[value="WorldCat"] {
   display: none; }
 
-ul.md-autocomplete-suggestions li:nth-child(4) {
+/* Hide WordCat autocomplete option */
+ul.md-autocomplete-suggestions li:nth-child(3) {
   display: none; }
 
 /* re-order full record display elements */
@@ -91,12 +92,22 @@ ul.md-autocomplete-suggestions li:nth-child(4) {
 .my-refworks-separator-ctm {
   display: none; }
 
-.s-lch-widget-float-btn {
-  right: 62px !important; }
+.s-lch-widget-float {
+  padding: 0 !important;
+}
 
-button.s-lch-widget-float-btn.online.s-lch-widget-img-btn {
-  background-color: transparent;
-  box-shadow: none; }
+.s-lch-widget-float-btn.s-lch-widget-img-btn, .s-lch-widget-float-btn img {
+  padding: 0;
+  max-width: 120px !important;
+  /*height: auto !important;*/
+  right: 88px;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/*button.s-lch-widget-float-btn.online.s-lch-widget-img-btn {*/
+/*  background-color: transparent;*/
+/*  box-shadow: none; }*/
 
 #iframe_e3cba83ef74e8285af62ba3fb7e93af6 {
   max-height: 400px; }
@@ -151,3 +162,145 @@ div[data-facet-group="External Search"] h3 {
 #external-search span {
   display: block;
   color: #3a3a3a; }
+
+/* Black background on advanced search bar */
+prm-atoz-search-bar .advanced-search-backdrop, prm-browse-search-bar .advanced-search-backdrop, prm-newspapers-search-bar .advanced-search-backdrop, prm-search-bar .advanced-search-backdrop, prm-tags-search-bar .advanced-search-backdrop {
+  background-color: black;
+}
+
+prm-atoz-search-bar .search-switch-buttons .md-button.switch-to-simple, prm-browse-search-bar .search-switch-buttons .md-button.switch-to-simple, prm-newspapers-search-bar .search-switch-buttons .md-button.switch-to-simple, prm-search-bar .search-switch-buttons .md-button.switch-to-simple, prm-tags-search-bar .search-switch-buttons .md-button.switch-to-simple {
+  color: white;
+}
+
+/* Footer */
+#custom-footer {
+  /*background-color: #46535E;*/
+  padding: 1em;
+  text-align: center;
+  margin-top: 4em;
+}
+
+#footer-links {
+  margin-bottom: 1em;
+}
+
+#footer-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#footer-links li {
+  margin-bottom: 0.5em;
+}
+
+#footer-links a,
+#footer-links a:link,
+#footer-links a:visited {
+  color: #3a3a3a;
+}
+
+#footer-links a:hover,
+#footer-links a:active {
+  box-shadow: none;
+  color: #3a3a3a;
+  border-bottom: 1px dotted #3a3a3a;
+
+}
+
+#footer-logo a:hover,
+#footer-logo a:active {
+  box-shadow: none;
+}
+
+@media only screen and
+(min-width: 600px) {
+  #footer-links ul {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #footer-links ul li {
+    margin: 0 0.5em;
+  }
+
+  #footer-links ul li:after {
+    content: "|";
+    margin-left: 1em;
+  }
+
+  #footer-links ul li:last-child:after {
+    content: "";
+    margin-left: 0;
+  }
+}
+
+/* Alert bar */
+#primo-alert-bar {
+  background: #FDB515;
+  color: black;
+  width: 100%;
+  font-size: 14pt;
+  text-align: center;
+}
+
+#primo-alert-bar p {
+  padding: 0.5em 0;
+  margin-bottom: 0;
+}
+
+#primo-alert-bar a,
+#primo-alert-bar a:link,
+#primo-alert-bar a:visited {
+  color: black;
+  border-bottom: 1px dotted black;
+}
+
+#primo-alert-bar a:hover,
+#primo-alert-bar a:active {
+  border-bottom: 1px solid black;
+  box-shadow: none;
+}
+
+/* Login Screen */
+prm-stand-alone-login md-card-content {
+  padding: 50px 20px!important;
+}
+prm-stand-alone-login > div {
+  background: #46535E;
+}
+
+prm-stand-alone-login h3 {
+  color: black !important;
+}
+
+prm-stand-alone-login .md-button:focus:not([disabled]),
+prm-stand-alone-login .md-button:hover:not([disabled]) {
+  color: black !important;
+}
+
+prm-stand-alone-login .dialog-inputs:hover {
+  /*background-color: #46535E;*/
+  /*color: white;*/
+}
+
+prm-stand-alone-login md-input-container:hover label,
+prm-stand-alone-login button.md-button.button-as-link:hover,
+prm-stand-alone-login button.md-button.button-as-link:focus,
+prm-stand-alone-login button.md-button.button-confirm:hover,
+prm-stand-alone-login button.md-button.button-confirm:focus,
+prm-stand-alone-login button.md-button.md-icon-button:hover,
+prm-stand-alone-login button.md-button.md-icon-button:focus {
+  text-decoration: 1px solid black;
+  background: #46535E !important;
+  color: white !important;
+}
+
+prm-stand-alone-login md-input-container.md-input-focused:hover label {
+  background: none;
+  color: inherit;
+}
