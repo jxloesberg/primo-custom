@@ -304,3 +304,90 @@ prm-stand-alone-login md-input-container.md-input-focused:hover label {
   background: none;
   color: inherit;
 }
+
+/* Added 4/21/22 */
+/* Removed 6/22/22 to allow for collapsing advanced search fields */
+
+/*#advancedSearchTabs {*/
+/*  min-height: 700px;*/
+/*  overflow: auto;*/
+/*}*/
+
+/*@media (min-width: 600px) {*/
+/*  #advancedSearchTabs {*/
+/*    min-height: 400px;*/
+/*  }*/
+/*}*/
+
+/*.string-block .animate-scale .middle {*/
+/*  display: none;*/
+/*}*/
+
+/*.collapsed-area .layout-wrap .layout-align-space-between-center .layout-row {*/
+/*  display: none;*/
+/*}*/
+
+/*prm-advanced-search * > button.collapsed-button * > md-icon {*/
+/*  display: none;*/
+/*}*/
+
+/* Fix ExLibris disappearing search input field issue */
+/*prm-search-bar .advanced-search-wrapper md-input-container.bold-text input.ng-hide:not(.ng-hide-animate) {*/
+/*  display: block !important;*/
+/*}*/
+
+/* The following three entries support the Primo VE HathiTrust Availability Add-On */
+
+span.umnHathiTrustLink {
+  margin-left: -5px;
+}
+
+span.umnHathiTrustLink md-icon svg {
+  height: 1.2em;
+  filter: grayscale(0%);
+}
+
+span.umnHathiTrustLink:hover md-icon svg {
+  filter: grayscale(0%);
+}
+
+@media only screen and (max-width: 600px) {
+  .ucls-home-page-column {
+    max-width: 90% !important;
+  }
+}
+
+/* Sign-in bar*/
+
+.bar.alert-bar {
+  background: #FDB515;
+  border-color: #FDB515;
+}
+
+.bar prm-authentication .md-button {
+  color: black;
+}
+
+.bar prm-authentication .md-button:hover:not([disabled]) {
+  background-color: black;
+}
+
+.md-button {
+  color: black;
+}
+
+span[translate='nui.message.dismiss'] {
+  text-transform: capitalize;
+}
+
+/* Stop long titles from overlapping in search suggestions */
+md-autocomplete-parent-scope {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Hide last bullet point on no-results page */
+prm-no-search-result ul li:nth-child(5) {
+  display: none;
+}
