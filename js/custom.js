@@ -257,7 +257,7 @@
     */
 
    var showAlert = false;
-   var alertText = '<p>News alert: <a href="http://ucberk.li/university-librarian">UC Berkeley has announced its next university librarian</a></p>';
+   var alertText = '<p>Service update: Some parts of the Library’s website will be down for maintenance on August 11.</p>';
 
    var topbarWrapper = document.getElementsByClassName('topbar-wrapper');
    var alertBanner = window.setInterval(function () {

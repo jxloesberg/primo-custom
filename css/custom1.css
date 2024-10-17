@@ -391,3 +391,18 @@ md-autocomplete-parent-scope {
 prm-no-search-result ul li:nth-child(5) {
   display: none;
 }
+
+/* Change the text color on the digital copy request form to black */
+.service-form .checkbox-warning-message {
+  color: black;
+}
+
+/* Make digital copy request input field look more like an input field */
+form[name='requestForm'] input[type='text'] {
+  border: 1px solid #706a6a;
+  width: 315px;
+}
+
+form[name='requestForm'] label[translate='almaDigitization.comment'] {
+  padding-left: 11px;
+}
